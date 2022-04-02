@@ -1,3 +1,3 @@
-# `fluent-uri-win32-arm64-msvc`
+# `fluent-uri-node-win32-arm64-msvc`
 
-This is the **aarch64-pc-windows-msvc** binary for `fluent-uri`
+This is the **aarch64-pc-windows-msvc** binary for `fluent-uri-node`

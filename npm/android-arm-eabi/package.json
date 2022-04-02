@@ -1,5 +1,5 @@
 {
-  "name": "fluent-uri-android-arm-eabi",
+  "name": "fluent-uri-node-android-arm-eabi",
   "version": "1.0.0",
   "os": [
     "android"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm"
   ],
-  "main": "fluent-uri.android-arm-eabi.node",
+  "main": "fluent-uri-node.android-arm-eabi.node",
   "files": [
-    "fluent-uri.android-arm-eabi.node"
+    "fluent-uri-node.android-arm-eabi.node"
   ],
   "description": "Template project for writing node package with napi-rs",
   "keywords": [

@@ -1,3 +1,3 @@
-# `fluent-uri-darwin-x64`
+# `fluent-uri-node-darwin-x64`
 
-This is the **x86_64-apple-darwin** binary for `fluent-uri`
+This is the **x86_64-apple-darwin** binary for `fluent-uri-node`

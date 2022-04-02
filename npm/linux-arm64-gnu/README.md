@@ -1,3 +1,3 @@
-# `fluent-uri-linux-arm64-gnu`
+# `fluent-uri-node-linux-arm64-gnu`
 
-This is the **aarch64-unknown-linux-gnu** binary for `fluent-uri`
+This is the **aarch64-unknown-linux-gnu** binary for `fluent-uri-node`

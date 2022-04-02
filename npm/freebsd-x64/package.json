@@ -1,5 +1,5 @@
 {
-  "name": "fluent-uri-freebsd-x64",
+  "name": "fluent-uri-node-freebsd-x64",
   "version": "1.0.0",
   "os": [
     "freebsd"
@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": "fluent-uri.freebsd-x64.node",
+  "main": "fluent-uri-node.freebsd-x64.node",
   "files": [
-    "fluent-uri.freebsd-x64.node"
+    "fluent-uri-node.freebsd-x64.node"
   ],
   "description": "Template project for writing node package with napi-rs",
   "keywords": [

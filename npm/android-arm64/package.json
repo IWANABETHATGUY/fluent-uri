@@ -1,5 +1,5 @@
 {
-  "name": "fluent-uri-android-arm64",
+  "name": "fluent-uri-node-android-arm64",
   "version": "1.0.0",
   "os": [
     "android"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm64"
   ],
-  "main": "fluent-uri.android-arm64.node",
+  "main": "fluent-uri-node.android-arm64.node",
   "files": [
-    "fluent-uri.android-arm64.node"
+    "fluent-uri-node.android-arm64.node"
   ],
   "description": "Template project for writing node package with napi-rs",
   "keywords": [

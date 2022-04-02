@@ -1,5 +1,5 @@
 {
-  "name": "fluent-uri-linux-arm-gnueabihf",
+  "name": "fluent-uri-node-linux-arm-gnueabihf",
   "version": "1.0.0",
   "os": [
     "linux"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm"
   ],
-  "main": "fluent-uri.linux-arm-gnueabihf.node",
+  "main": "fluent-uri-node.linux-arm-gnueabihf.node",
   "files": [
-    "fluent-uri.linux-arm-gnueabihf.node"
+    "fluent-uri-node.linux-arm-gnueabihf.node"
   ],
   "description": "Template project for writing node package with napi-rs",
   "keywords": [

@@ -1,3 +1,3 @@
-# `fluent-uri-win32-ia32-msvc`
+# `fluent-uri-node-win32-ia32-msvc`
 
-This is the **i686-pc-windows-msvc** binary for `fluent-uri`
+This is the **i686-pc-windows-msvc** binary for `fluent-uri-node`

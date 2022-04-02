@@ -1,5 +1,5 @@
 {
-  "name": "fluent-uri-darwin-arm64",
+  "name": "fluent-uri-node-darwin-arm64",
   "version": "1.0.0",
   "os": [
     "darwin"
@@ -7,9 +7,9 @@
   "cpu": [
     "arm64"
   ],
-  "main": "fluent-uri.darwin-arm64.node",
+  "main": "fluent-uri-node.darwin-arm64.node",
   "files": [
-    "fluent-uri.darwin-arm64.node"
+    "fluent-uri-node.darwin-arm64.node"
   ],
   "description": "Template project for writing node package with napi-rs",
   "keywords": [

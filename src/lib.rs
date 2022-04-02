@@ -1,7 +1,7 @@
 #![deny(clippy::all)]
 
+use fluent_uri::Uri as FUri;
 use napi_derive::napi;
-
 #[cfg(all(
   any(windows, unix),
   target_arch = "x86_64",
@@ -12,6 +12,25 @@ use napi_derive::napi;
 static ALLOC: mimalloc::MiMalloc = mimalloc::MiMalloc;
 
 #[napi]
-pub fn plus_100(input: u32) -> u32 {
-  input + 100
+#[allow(dead_code)]
+pub struct Uri {
+  scheme: String,
+  authority: String,
+  path: String,
+  query: String,
+  fragment: String,
+}
+
+#[napi]
+pub fn parse(source: String) -> Option<Uri> {
+  match FUri::parse(&source) {
+    Ok(uri) => Some(Uri {
+      scheme: uri.scheme()?.as_str().to_string(),
+      authority: "".to_string(),
+      path: uri.path().as_str().to_string(),
+      query: uri.query()?.to_string(),
+      fragment: uri.fragment()?.as_str().to_string(),
+    }),
+    Err(_) => None,
+  }
 }

@@ -1,3 +1,3 @@
-# `fluent-uri-android-arm-eabi`
+# `fluent-uri-node-android-arm-eabi`
 
-This is the **armv7-linux-androideabi** binary for `fluent-uri`
+This is the **armv7-linux-androideabi** binary for `fluent-uri-node`
