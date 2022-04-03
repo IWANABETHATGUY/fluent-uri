@@ -11,14 +11,14 @@ use napi_derive::napi;
 #[global_allocator]
 static ALLOC: mimalloc::MiMalloc = mimalloc::MiMalloc;
 
-#[napi]
+#[napi(object)]
 #[allow(dead_code)]
 pub struct Uri {
-  scheme: String,
-  authority: String,
-  path: String,
-  query: String,
-  fragment: String,
+  pub scheme: String,
+  pub authority: String,
+  pub path: String,
+  pub query: String,
+  pub fragment: String,
 }
 
 #[napi]

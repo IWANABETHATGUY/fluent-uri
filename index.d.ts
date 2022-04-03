@@ -6,4 +6,11 @@ export class ExternalObject<T> {
     [K: symbol]: T
   }
 }
-export function plus100(input: number): number
+export interface Uri {
+  scheme: string
+  authority: string
+  path: string
+  query: string
+  fragment: string
+}
+export function parse(source: string): Uri | undefined | null
