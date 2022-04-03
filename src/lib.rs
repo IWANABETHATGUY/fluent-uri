@@ -25,11 +25,20 @@ pub struct Uri {
 pub fn parse(source: String) -> Option<Uri> {
   match FUri::parse(&source) {
     Ok(uri) => Some(Uri {
-      scheme: uri.scheme()?.as_str().to_string(),
+      scheme: uri
+        .scheme()
+        .map(|scheme| scheme.as_str().to_string())
+        .unwrap_or_default(),
       authority: "".to_string(),
       path: uri.path().as_str().to_string(),
-      query: uri.query()?.to_string(),
-      fragment: uri.fragment()?.as_str().to_string(),
+      query: uri
+        .query()
+        .map(|q| q.as_str().to_string())
+        .unwrap_or_default(),
+      fragment: uri
+        .fragment()
+        .map(|f| f.as_str().to_string())
+        .unwrap_or_default(),
     }),
     Err(_) => None,
   }

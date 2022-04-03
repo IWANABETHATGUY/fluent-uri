@@ -1,8 +1,13 @@
 import test from 'ava'
 
-import { plus100 } from '../index'
+import { parse } from '../index'
 
 test('sync function from native code', (t) => {
-  const fixture = 42
-  t.is(plus100(fixture), fixture + 100)
+  t.deepEqual(parse('inmemory:'), {
+    scheme: 'inmemory',
+    authority: '',
+    path: '',
+    query: '',
+    fragment: '',
+  })
 })
